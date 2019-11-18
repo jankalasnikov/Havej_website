@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nejčastější otázky</title>
+    <link rel="stylesheet" href="NejcastejsiOtazky.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+<script>
+    $(document).ready(function() {
+        $(".menu-icon").on("click", function() {
+            $("nav ul").toggleClass("showing");
+        });
+    });
+    // Scrolling Effect
+    $(window).on("scroll", function() {
+        if($(window).scrollTop()) {
+            $('nav').addClass('black');
+        }
+        else {
+            $('nav').removeClass('black');
+        }})
+</script>
+<div class="wrapper">
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+                <a style="text-decoration:none"href="#">HAVEJ</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html"><b>Domů</b></a></li>
+                    <li><a href="Spoluprace.html"><b>Spolupráce</b></a></li>
+                    <!--<li><a href="ObchodPodminky.html"><b>Obchodní podmínky</b></a></li>-->
+                    <li><a href="#"><b>Nejčastější otázky</b></a></li>
+                    <li><a href="Contact.html"><b>Kontakt</b></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h2 class="title-main-page">Otázky</h2>
+    <h4 class="title-second">Kdy se vyplácí peníze?</h4>
+    <p>Peníze se zpravidla vyplácí vždy následující týden na tvůj bankovní účet.</p>
+
+    <h4 class="title-second">Pro koho je práce vhodná?</h4>
+    <p>Pro všechny osoby starší 18 let s vlastním kolem nebo řidičským oprávněním skupiny B, A či A2.</p>
+
+    <h4 class="title-second">Jak dlouho mohu rozvážet?</h4>
+    <p>Každý den od 10:00 do 24:00, rozvážejí není nijak omezeno, můžeš tedy rozvážet jak dlouho chceš.</p>
+
+    <h4 class="title-second">Kolik si mohu týdně vydělat?</h4>
+    <p>To je poměrně složitá otázka, záleží to na tom, jestli budeš jezdit každý den a případně jak dlouho. Z praxe víme, že v klidu lze vydělat 8 400 Kč týdně. Pokud budeš chtít a bude tě to bavit, můžeš si samozřejmě vydělat o dost více.</p>
+    <footer>
+        <p class="copyright">&copy; 2019, HAVEJ</p>
+    </footer>
+</body>
+</html>

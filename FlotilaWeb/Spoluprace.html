@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spolupráce | HAVEJ</title>
+    <link rel="stylesheet" href="spoluprace.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<script>
+    $(document).ready(function() {
+        $(".menu-icon").on("click", function() {
+            $("nav ul").toggleClass("showing");
+        });
+    });
+    // Scrolling Effect
+    $(window).on("scroll", function() {
+        if($(window).scrollTop()) {
+            $('nav').addClass('black');
+        }
+        else {
+            $('nav').removeClass('black');
+        }})
+</script>
+<div class="wrapper">
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+                HAVEJ
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html"><b>Domů</b></a></li>
+                    <li><a href="#"><b>Spolupráce</b></a></li>
+                   <!-- <li><a href="ObchodPodminky.html"><b>Obchodní podmínky</b></a></li>-->
+                    <li><a href="NejcastejsiOtazky.html"><b>Nejčastější otázky</b></a></li>
+                    <li><a href="Contact.html"><b>Kontakt</b></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <h1 class="title">Jak to teda funguje?</h1>
+        <div class="img-with-text">
+            <h3 class="title-second">Čím to můžeš rozvážet?</h3>
+            <p>
+                Pokud se rozhodneš pro
+            <b>Auto</b>
+                tak
+                <u>K tomu budeš potřebovat:</u>
+                malý technický průkaz od vozu,
+                občanský průkaz,
+                řidičský průkaz,
+                zelenou kartu. Nic víc, nic míň. Možná nějakou tu špetku trpělivosti.
+                Pokud se rozhodneš pro
+            <b>Kolo</b>
+                tak to budeš potřebovat jen
+                občasnký průkaz a nějakou tu
+                dobrou kondičku :)
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p class="copyright">&copy; 2019, HAVEJ</p>
+    </footer>
+</body>
+</html>
